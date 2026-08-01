@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class CreditLimitServiceApplication
 
 fun main(args: Array<String>) {
-	runApplication<CreditLimitServiceApplication>(*args)
+    runApplication<CreditLimitServiceApplication>(*args)
 }

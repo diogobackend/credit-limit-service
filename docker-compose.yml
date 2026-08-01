@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: credit-limit-mysql
+    environment:
+      MYSQL_DATABASE: limit_db
+      MYSQL_USER: limit_user
+      MYSQL_PASSWORD: limit_pass
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3308:3306"
+    volumes:
+      - credit-limit-mysql-data:/var/lib/mysql
+
+volumes:
+  credit-limit-mysql-data:
